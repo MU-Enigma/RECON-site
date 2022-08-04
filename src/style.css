@@ -13,12 +13,22 @@
   }
 }
 
+@layer utilities {
+  .text-accent {
+    color: #EA25F9;
+  }
+
+  .bg-accent {
+    background-color: #010722;
+  }
+}
+
 :root {
   font-family: 'Space Grotesk', sans-serif;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #010722;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,17 +37,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
 }
