@@ -6,7 +6,7 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-2xl font-bold;
   }
   h2 {
     @apply text-xl;
@@ -19,7 +19,15 @@
   }
 
   .bg-accent {
-    background-color: #010722;
+    background-color: #EA25F9;
+  }
+
+  .h-home {
+    height: calc(100vh - 6rem);
+  }
+
+  .h-home-xl {
+    height: calc(100vh - 10rem);
   }
 }
 
@@ -50,4 +58,38 @@ body {
 
 #app {
   margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 624px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1112px;
+  }
 }
