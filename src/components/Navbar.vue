@@ -37,9 +37,4 @@ export default {
 </template>
 
 <style scoped>
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1112px;
-  }
-}
 </style>
