@@ -3,13 +3,15 @@ import Menu from './Menu.vue';
 </script>
 
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   data() {
     return {
       menu: false
     }
   }
-}
+})
 </script>
 
 <template>
