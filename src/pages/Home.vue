@@ -1,17 +1,21 @@
-<script setup lang="ts">
-import Navbar from '../components/Navbar.vue'
-</script>
-
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   created() {
     document.title = "RECON"
+  },
+  methods: {
+    goto(refName: string) {
+      window.scrollTo({
+        top: document.getElementById(refName).offsetTop,
+        behavior: 'smooth'
+      })
+    }
   }
-}
+})
 </script>
 
 <template>
-  <Navbar />
   <div class="flex flex-col gap-20 items-center justify-center">
     <section id="home" class="flex flex-col gap-12 p-6 sm:p-14 container h-home lg:h-home-xl rounded-2xl bg">
       <section class="flex flex-col gap-4">
@@ -19,6 +23,7 @@ export default {
         <h2 class="xl:text-3xl"><span class="text-accent uppercase">recon</span> the OctaPi</h2>
       </section>
       <button
+        @click="goto('about')"
         class="uppercase bg-accent rounded-lg p-4 text-slate-900 font-bold w-32 cursor-pointer hover:scale-95 duration-150">
         know more
       </button>

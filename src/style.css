@@ -22,6 +22,10 @@
     background-color: #EA25F9;
   }
 
+  .bg-sec {
+    background-color: #0C112B;
+  }
+
   .h-home {
     height: calc(100vh - 6rem);
   }

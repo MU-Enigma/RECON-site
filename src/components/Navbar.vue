@@ -17,10 +17,10 @@ export default defineComponent({
 <template>
   <nav class="w-screen flex justify-center items-center my-6 md:my-12">
     <header class="flex justify-between items-center container mx-6">
-      <section class="flex items-center gap-3">
+      <router-link to="/" class="flex items-center gap-3">
         <img src="../assets/recon.svg" alt="recon-logo">
         <span class="uppercase font-bold">recon</span>
-      </section>
+      </router-link>
 
       <section class="md:hidden" @click="menu = true">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 
 import Home from './Home.vue'
+const Contributors = () => import('./Contributors.vue')
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -12,13 +13,18 @@ export const router = createRouter({
     },
     {
       path: '/contributors',
-      component: Home,
+      component: Contributors,
       name: 'contributors'
     },
     {
       path: '/gallery',
       component: Home,
       name: 'gallery'
+    },
+    {
+      path: '/stats',
+      component: Home,
+      name: 'stats'
     }
   ]
 })
