@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 
 import Home from './Home.vue'
 const Contributors = () => import('./Contributors.vue')
+const Gallery = () => import('./Gallery.vue')
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -18,7 +19,7 @@ export const router = createRouter({
     },
     {
       path: '/gallery',
-      component: Home,
+      component: Gallery,
       name: 'gallery'
     },
     {
