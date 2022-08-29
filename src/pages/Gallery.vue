@@ -32,7 +32,7 @@ export default defineComponent({
         <h1 class="capitalize">{{ $router.currentRoute.value.name }}</h1>
         <h2 class="my-2">A peek behind the scenes</h2>
       </section>
-      <section class="grid gap-2 min-h-screen lg:gap-4 aspect-square gallery">
+      <section class="grid gap-2 min-h-screen lg:gap-4 aspect-square gallery mb-12">
         <img v-for="im in imgs" :key="im" :src="im"
           class="w-0 h-0 min-w-full min-h-full grayscale rounded-sm duration-300 ease-in-out object-cover hover:w-80 hover:h-80 hover:grayscale-0 hover:rounded-xl">
       </section>

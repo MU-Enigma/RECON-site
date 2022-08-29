@@ -21,7 +21,7 @@ export default defineComponent({
 
 <template>
   <div class="flex items-center justify-center px-6 py-6">
-    <section class="flex flex-col gap-8 container">
+    <section class="flex flex-col min-h-screen gap-8 container">
       <section>
         <h1 class="capitalize">{{ $router.currentRoute.value.name }}</h1>
         <h2 class="my-2">The people behind all this awesomeness</h2>
