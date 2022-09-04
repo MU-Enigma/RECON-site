@@ -19,18 +19,19 @@ export default defineComponent({
   <div class="flex flex-col gap-20 items-center justify-center">
     <section id="home" class="flex flex-col gap-12 p-6 sm:p-14 container h-home lg:h-home-xl rounded-2xl bg">
       <section class="flex flex-col gap-4">
-        <h1 class="xl:text-4xl">Clustered up for performance</h1>
+        <h1 class="xl:text-4xl mt-16 md:mt-0">Clustered up for performance</h1>
         <h2 class="xl:text-3xl"><span class="text-accent uppercase">recon</span> the OctaPi</h2>
       </section>
       <button
-        @click="goto('about')"
+        @click="goto('about-container')"
         class="uppercase bg-accent rounded-lg p-4 text-slate-900 font-bold w-32 cursor-pointer hover:scale-95 duration-150">
         know more
       </button>
     </section>
 
-    <section id="about"
-      class="flex flex-col gap-4 lg:gap-0 lg:flex-row items-center lg:justify-between container px-6 lg:px-0 lg:mx-6 mb-20">
+    <section id="about-container" class="flex flex-col min-h-screen items-center mb-12 py-16 lg:py-0 gap-20 lg:gap-0 lg:justify-around">
+      <section id="about"
+      class="flex flex-col-reverse gap-8 lg:gap-0 lg:flex-row lg:items-center lg:justify-between container px-6 md:px-0 lg:mx-6">
       <section class="flex flex-col gap-4 lg:w-3/5">
         <p class="flex flex-col gap-3">
         <h1>About the cluster</h1>
@@ -49,7 +50,22 @@ export default defineComponent({
         </span>
         </p>
       </section>
-      <img src="../assets/raspi.jpg" class="rounded-xl w-full lg:w-1/3 self-center">
+      <img src="../assets/raspi.jpg" class="rounded-xl w-96">
+    </section>
+
+    <section id="schema"
+      class="flex flex-col gap-8 lg:gap-0 lg:flex-row lg:items-center lg:justify-between container px-6 md:px-0 lg:mx-6">
+      <img src="../assets/raspi.svg" class="w-96" />
+      <section class="flex flex-col gap-4 lg:w-3/5">
+        <p class="flex flex-col gap-3">
+        <h1>What is a Raspberry Pi?</h1>
+        <span>
+         The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python.<br /><br />
+         It’s capable of doing everything you’d expect a desktop computer to do, from browsing the internet and playing high-definition video, to making spreadsheets, word-processing, and playing games
+        </span>
+        </p>
+      </section>
+    </section>
     </section>
   </div>
 </template>
