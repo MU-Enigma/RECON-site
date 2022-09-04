@@ -1,17 +1,15 @@
-<script setup lang="ts">
+<script setup>
 import Menu from './Menu.vue';
 </script>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
+<script>
+export default{
   data() {
     return {
       menu: false
     }
   }
-})
+}
 </script>
 
 <template>

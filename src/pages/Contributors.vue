@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
 import axios from 'axios'
 export default defineComponent({
@@ -9,6 +9,7 @@ export default defineComponent({
   },
   created() {
     this.getCore()
+    window.scrollTo(0, 0)
   },
   methods: {
     async getCore() {

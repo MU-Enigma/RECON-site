@@ -1,7 +1,6 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script>
 import axios from 'axios'
-export default defineComponent({
+export default{
   data() {
     return {
       imgs: []
@@ -9,20 +8,18 @@ export default defineComponent({
   },
   created() {
     this.getImgs()
+    window.scrollTo(0, 0)
   },
   methods: {
     getImgs() {
       axios.get("https://api.github.com/repos/MU-Enigma/store/contents/recon/images")
         .then((res) => {
           const gal = res.data
-          gal.forEach((el: { download_url: any }) => {
-            this.imgs.push(el.download_url)
-          })
-          console.log(this.imgs)
+          gal.forEach((el) => this.imgs.push(el.download_url))
         })
     }
   }
-})
+}
 </script>
 
 <template>

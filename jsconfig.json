@@ -1,0 +1,3 @@
+{
+  "include": ["src/**/*.vue", "src/main.js", "src/pages/routes.js"],
+}

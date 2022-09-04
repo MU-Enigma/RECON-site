@@ -1,18 +1,17 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
+<script>
+export default{
   created() {
     document.title = "RECON"
   },
   methods: {
-    goto(refName: string) {
+    goto(refName) {
       window.scrollTo({
         top: document.getElementById(refName).offsetTop,
         behavior: 'smooth'
       })
     }
   }
-})
+}
 </script>
 
 <template>
