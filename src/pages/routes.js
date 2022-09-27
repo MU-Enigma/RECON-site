@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import Home from './Home.vue'
 const Contributors = () => import('./Contributors.vue')
 const Gallery = () => import('./Gallery.vue')
+const Stats = () => import('./Stats.vue')
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -24,7 +25,7 @@ export const router = createRouter({
     },
     {
       path: '/stats',
-      component: Home,
+      component: Stats,
       name: 'stats'
     }
   ]

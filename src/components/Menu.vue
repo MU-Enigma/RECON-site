@@ -6,7 +6,7 @@
     <li class="font-bold hover:text-accent duration-300">
       <router-link to="/gallery">Gallery</router-link>
     </li>
-    <li class="font-bold hover:text-accent duration-300 hidden">
+    <li class="font-bold hover:text-accent duration-300">
       <router-link to="/stats">Stats</router-link>
     </li>
   </ul>
