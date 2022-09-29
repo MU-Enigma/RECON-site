@@ -18,7 +18,7 @@ export default{
   <div class="flex flex-col gap-20 items-center justify-center">
     <section id="home" class="flex flex-col gap-12 p-6 sm:p-14 container h-home lg:h-home-xl rounded-2xl bg">
       <section class="flex flex-col gap-4">
-        <h1 class="xl:text-4xl mt-16 md:mt-0">Clustered up for performance</h1>
+        <h1 class="xl:text-4xl mt-16 lg:mt-0">Clustered up for performance</h1>
         <h2 class="xl:text-3xl"><span class="text-accent uppercase">recon</span> the OctaPi</h2>
       </section>
       <button

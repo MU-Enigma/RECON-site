@@ -32,7 +32,7 @@ export default{
 
   <div class="fixed z-50 top-0 w-screen h-screen flex md:hidden items-center justify-center" v-if="menu">
     <section class="bg-black/60 w-full h-full backdrop-blur-md" @click="menu = false"></section>
-    <Menu class="fixed flex flex-col items-center" />
+    <Menu class="fixed flex flex-col items-center" @click="menu = !menu" />
   </div>
 </template>
 
